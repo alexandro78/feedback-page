@@ -1,0 +1,424 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom, rgba(106, 111, 112) 80%, rgba(86, 90, 91) 100%);
+    color: #fff;
+    height: 2.7em;
+}
+
+.top-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 9em;
+    height: 100%;
+}
+
+.main-bar {
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    align-items: center;
+}
+
+.main-bar .logo {
+    margin-right: 5em;
+}
+
+.main-bar .logo img {
+    width: 190px;
+    height: 60px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+
+.main-bar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4.9em;
+    border-left: 1px solid #ccc;
+    font-size: 0.8em;
+    padding: 1.3em;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.top-bar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 100%;
+}
+
+.top-bar ul li:hover {
+    height: 3.7em;
+    background-color: #484B4C;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+
+.main-bar ul li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background-color: #B5251D;
+    transition: width 0.3s ease-in-out;
+}
+
+.main-bar ul li:hover::after {
+    width: 100%;
+}
+
+
+nav ul li a, .top-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-bar ul li a {
+    color: #212121;
+    text-decoration: none;
+}
+
+
+/* Slider */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+
+.slider-wrapper img {
+    width: 100vw;
+    height: auto;
+}
+/* end of slider styles */
+
+
+main {
+    flex: 1;
+    padding: 1em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #f4f4f4;
+
+}
+
+
+/* Styles for feedback form */
+.feedback-form {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 2em auto;
+}
+
+.feedback-form h2 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.feedback-form .form-group {
+    margin-bottom: 1em;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.feedback-form button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.feedback-form button:hover {
+    background-color: #555;
+}
+/* end of section feedback form styles */
+
+
+/* Footer */
+footer {
+    background-color: #6A6F70;
+    padding: 0;
+    height: 47vh;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-container {
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footer-block {
+    flex: 1;
+    margin: 0em;
+    padding-top: 2em;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2em;
+    padding-top: 2em;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.footer-content-wrapper {
+    margin: 0em;
+    position: relative;
+    height: 80%;
+    padding: 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.footer-content-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 1em;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #616365;
+}
+
+
+.last-column {
+    width: 27vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.last-footer-content-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 6em;
+}
+
+div.last-footer-content-column {
+    font-size: 0.73em;
+}
+
+.last-footer-content-column p {
+    padding-bottom: 0.6em;
+}
+
+.footer-block:last-child .footer-content-wrapper::after {
+    display: none;
+}
+
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.3em;
+    text-align: left;
+}
+
+.footer-links a {
+    color: #ecf1f1;
+    font-size: 0.73em;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #FCFCFC;
+    text-decoration: underline;
+}
+
+.firts-content-column {
+margin-right: 3em;
+margin-left: 5em;
+}
+
+.icon-row {
+    display: flex;
+    padding-right: 0.1em;
+}
+
+.icon-row i {
+    color: #E1E2E2;
+    font-size: 1.5em;
+padding-right: 0.8em;
+    flex-shrink: 0;
+}
+
+.icon-row i:hover {
+    color: #FFFFFF;
+}
+/* end of footer */
+
+
+
+/* Media queries */
+/*Для адаптивности під різні пристрої потрібно реалізувати css для окремих breackpoints*/
+
+/* For smartphones */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, footer {
+        padding: 0.5em;
+    }
+
+    nav, .top-bar, .main-bar {
+        padding: 0.5em;
+        flex-direction: column;
+    }
+
+    .main-bar .logo {
+        margin-bottom: 0.5em;
+        padding-left: 0;
+    }
+
+    .main-bar .logo img {
+        width: 150px;
+        height: auto;
+    }
+
+    .container {
+        padding: 0.5em;
+    }
+
+    .slider {
+        padding: 0.5em;
+    }
+
+    nav ul, .top-bar ul, .main-bar ul {
+        flex-direction: column;
+    }
+
+    nav ul li, .top-bar ul li, .main-bar ul li {
+        margin: 0.5em 0;
+    }
+}
+
+/* For tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    header, footer {
+        padding: 0.75em;
+    }
+
+    nav, .top-bar, .main-bar {
+        padding: 0.75em;
+    }
+
+    .container {
+        padding: 0.75em;
+    }
+
+    .slider {
+        padding: 0.75em;
+    }
+}
+
+/* For PCs */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    header, footer {
+        padding: 0em;
+    }
+
+    nav, .top-bar, .main-bar {
+        padding: 1em;
+    }
+
+    .container {
+        padding: 1em;
+    }
+
+    .slider {
+       
+    }
+}
